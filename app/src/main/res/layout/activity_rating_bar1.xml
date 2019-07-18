@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.d_app.RatingBar"
+    android:orientation="vertical"
+    android:background="#ffbd9b"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/txt"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:typeface="serif"
+            android:hint="@string/rate1"
+            android:textColor="#ff2209"
+            />
+
+        <RatingBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbar"
+            android:layout_marginTop="30dp"
+            android:numStars="@integer/Five"
+            android:rating="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="@string/ok"
+            android:id="@+id/btn10"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:typeface="serif"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:background="#b0ffa6" />
+    </LinearLayout>
+
+</LinearLayout>
